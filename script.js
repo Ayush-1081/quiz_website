@@ -21,16 +21,18 @@ function checkAnswer(question, selectedAnswer) {
         optionDiv.style.backgroundColor = 'lightblue'; // Reset to original blue color
     });
 
+    // Get the selected option block
+    const selectedOptionDiv = document.querySelector(`input[name="${question}"][value="${selectedAnswer}"]`).parentElement;
+
     if (selectedAnswer === correctAnswers[question]) {
         feedbackDiv.innerHTML = 'Correct!';
         feedbackDiv.className = 'feedback correct';
-        const selectedOptionDiv = document.querySelector(`input[name="${question}"][value="${selectedAnswer}"]`).parentElement;
         selectedOptionDiv.style.backgroundColor = 'lightgreen'; // Change to green if correct
     } else {
         feedbackDiv.innerHTML = 'Wrong!';
         feedbackDiv.className = 'feedback wrong';
-        const selectedOptionDiv = document.querySelector(`input[name="${question}"][value="${selectedAnswer}"]`).parentElement;
         selectedOptionDiv.style.backgroundColor = 'red'; // Change to red if wrong
+        // Highlight the correct answer as well
         const correctOptionDiv = document.querySelector(`input[name="${question}"][value="${correctAnswers[question]}"]`).parentElement;
         correctOptionDiv.style.backgroundColor = 'lightgreen'; // Change correct option to green
     }
