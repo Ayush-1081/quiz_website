@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test Your Knowledge!</h1>
+
+        <!-- Question 1 -->
+        <div class="question-box">
+            <p class="question">1. What is the capital of France?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Madrid</button>
+                <button onclick="checkAnswer(this, true)">Paris</button>
+                <button onclick="checkAnswer(this, false)">Berlin</button>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-box">
+            <p class="question">2. Which is the largest planet in our solar system?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Earth</button>
+                <button onclick="checkAnswer(this, false)">Mars</button>
+                <button onclick="checkAnswer(this, true)">Jupiter</button>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-box">
+            <p class="question">3. Who developed the theory of relativity?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, true)">Albert Einstein</button>
+                <button onclick="checkAnswer(this, false)">Isaac Newton</button>
+                <button onclick="checkAnswer(this, false)">Galileo Galilei</button>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-box">
+            <p class="question">4. What is the powerhouse of the cell?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Nucleus</button>
+                <button onclick="checkAnswer(this, true)">Mitochondria</button>
+                <button onclick="checkAnswer(this, false)">Ribosome</button>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-box">
+            <p class="question">5. Which element has the chemical symbol 'O'?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Osmium</button>
+                <button onclick="checkAnswer(this, true)">Oxygen</button>
+                <button onclick="checkAnswer(this, false)">Oganesson</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
