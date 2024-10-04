@@ -3,65 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Quiz</title>
+    <title>MCQ Quiz for Kids</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Test Your Knowledge!</h1>
-
-        <!-- Question 1 -->
-        <div class="question-box">
-            <p class="question">1. What is the capital of France?</p>
-            <div class="options">
-                <button onclick="checkAnswer(this, false)">Madrid</button>
-                <button onclick="checkAnswer(this, true)">Paris</button>
-                <button onclick="checkAnswer(this, false)">Berlin</button>
+        <h1>MCQ Quiz for Kids</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Q1 - भारत के संविधान में कितने मौलिक अधिकार थे?</p>
+                <label><input type="radio" name="q1" value="A"> A) 6</label><br>
+                <label><input type="radio" name="q1" value="B"> B) 7</label><br>
+                <label><input type="radio" name="q1" value="C"> C) 10</label><br>
+                <label><input type="radio" name="q1" value="D"> D) 11</label>
             </div>
-        </div>
 
-        <!-- Question 2 -->
-        <div class="question-box">
-            <p class="question">2. Which is the largest planet in our solar system?</p>
-            <div class="options">
-                <button onclick="checkAnswer(this, false)">Earth</button>
-                <button onclick="checkAnswer(this, false)">Mars</button>
-                <button onclick="checkAnswer(this, true)">Jupiter</button>
+            <div class="question">
+                <p>Q2 - 'शोषण के विरुद्ध अधिकार' के संदर्भ में निम्नलिखित में से कौन सा सही है?</p>
+                <label><input type="radio" name="q2" value="A"> A) मानव तस्करी और बंधुआ मजदूरी पर रोक</label><br>
+                <label><input type="radio" name="q2" value="B"> B) किसी धर्म विशेष के प्रचार के लिए करों के भुगतान के रूप में स्वतंत्रता</label><br>
+                <label><input type="radio" name="q2" value="C"> C) अल्पसंख्यकों के हितों का संरक्षण</label><br>
+                <label><input type="radio" name="q2" value="D"> D) उपर्युक्त में से एक से अधिक</label>
             </div>
-        </div>
 
-        <!-- Question 3 -->
-        <div class="question-box">
-            <p class="question">3. Who developed the theory of relativity?</p>
-            <div class="options">
-                <button onclick="checkAnswer(this, true)">Albert Einstein</button>
-                <button onclick="checkAnswer(this, false)">Isaac Newton</button>
-                <button onclick="checkAnswer(this, false)">Galileo Galilei</button>
+            <div class="question">
+                <p>Q3 - धर्म की स्वतंत्रता के अधिकार में क्या शामिल नहीं है?</p>
+                <label><input type="radio" name="q3" value="A"> A) सभी स्कूलों में धार्मिक निर्देश देने की स्वतंत्रता</label><br>
+                <label><input type="radio" name="q3" value="B"> B) किसी भी धर्म का पालन करने की स्वतंत्रता</label><br>
+                <label><input type="radio" name="q3" value="C"> C) उपर्युक्त में से कोई नहीं</label>
             </div>
-        </div>
 
-        <!-- Question 4 -->
-        <div class="question-box">
-            <p class="question">4. What is the powerhouse of the cell?</p>
-            <div class="options">
-                <button onclick="checkAnswer(this, false)">Nucleus</button>
-                <button onclick="checkAnswer(this, true)">Mitochondria</button>
-                <button onclick="checkAnswer(this, false)">Ribosome</button>
+            <div class="question">
+                <p>Q4 - अवसर की समानता से संबंधित अनुच्छेद है:</p>
+                <label><input type="radio" name="q4" value="A"> A) 19</label><br>
+                <label><input type="radio" name="q4" value="B"> B) 16</label><br>
+                <label><input type="radio" name="q4" value="C"> C) 14</label>
             </div>
-        </div>
 
-        <!-- Question 5 -->
-        <div class="question-box">
-            <p class="question">5. Which element has the chemical symbol 'O'?</p>
-            <div class="options">
-                <button onclick="checkAnswer(this, false)">Osmium</button>
-                <button onclick="checkAnswer(this, true)">Oxygen</button>
-                <button onclick="checkAnswer(this, false)">Oganesson</button>
+            <div class="question">
+                <p>Q5 - भारतीय संविधान के अनुच्छेद 19 में निम्नलिखित में से कौन सा अधिकार शामिल है?</p>
+                <label><input type="radio" name="q5" value="A"> A) संवैधानिक उपचारों का अधिकार</label><br>
+                <label><input type="radio" name="q5" value="B"> B) शोषण के विरुद्ध अधिकार</label><br>
+                <label><input type="radio" name="q5" value="C"> C) वाक् और अभिव्यक्ति की स्वतंत्रता का अधिकार</label>
             </div>
-        </div>
 
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
