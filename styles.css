@@ -1,55 +1,53 @@
 body {
-    background: linear-gradient(to right, yellow, lightblue);
+    background-color: yellow; /* Page background color */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     text-align: center;
-    font-size: 36px; /* Larger title */
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .question {
-    background-color: lightgreen; /* Green background for the question */
-    padding: 15px;
-    border-radius: 8px;
+    background-color: lightgreen; /* Initial color of question box */
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
 .option {
-    background-color: lightblue; /* Blue background for each option */
-    padding: 10px;
+    background-color: lightblue; /* Default color of option boxes */
     border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    padding: 15px; /* Increase padding for larger clickable area */
+    margin: 10px 0; /* Margin between options */
+    transition: background-color 0.3s; /* Smooth color transition */
 }
 
-.option:hover {
-    background-color: deepskyblue; /* Change color on hover */
+.option label {
+    display: block; /* Ensure the label takes the full width */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .feedback {
+    text-align: center;
+    font-size: 1.5em;
     margin-top: 10px;
-    font-size: 24px; /* Larger feedback text */
-    font-weight: bold; /* Make it denser */
 }
 
-.feedback.correct {
-    color: green;
+.correct {
+    color: green; /* Color for correct feedback */
 }
 
-.feedback.wrong {
-    color: red;
+.wrong {
+    color: red; /* Color for wrong feedback */
 }
