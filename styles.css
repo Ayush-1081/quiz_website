@@ -19,25 +19,33 @@ h1 {
 }
 
 .question {
+    background-color: lightgreen; /* Green background for the question */
+    padding: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: lightgreen;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+.option {
+    background-color: lightblue; /* Blue background for each option */
+    padding: 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: green;
+.option:hover {
+    background-color: deepskyblue; /* Change color on hover */
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
+.feedback {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.wrong {
+    color: red;
 }
