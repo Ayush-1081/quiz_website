@@ -28,8 +28,9 @@ h1 {
 .option {
     background-color: lightblue; /* Default color of option boxes */
     border-radius: 5px;
-    padding: 15px; /* Increase padding for larger clickable area */
+    padding: 30px; /* Increase padding for larger clickable area */
     margin: 10px 0; /* Margin between options */
+    min-height: 80px; /* Set a minimum height to make it taller */
     transition: background-color 0.3s; /* Smooth color transition */
 }
 
