@@ -16,6 +16,8 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 36px; /* Larger title */
+    margin-bottom: 20px;
 }
 
 .question {
@@ -31,6 +33,7 @@ h1 {
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 .option:hover {
@@ -39,7 +42,8 @@ h1 {
 
 .feedback {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 24px; /* Larger feedback text */
+    font-weight: bold; /* Make it denser */
 }
 
 .feedback.correct {
